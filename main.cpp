@@ -11,7 +11,7 @@
 #include <windows.h>
 #include <fstream>
 #include <nlohmann/json.hpp>
-#include "Headers/Exential.h"
+#include "Exential.h"
 
 using json = nlohmann::json;
 
@@ -250,11 +250,11 @@ int main()
             break;
         }
         case 3:
-            std::cout << "Encerrando aplicação..." << std::endl;
+            std::cout << "Encerrando aplicação...\n".;
             Sleep(100);
             return 0;
         default:
-            std::cout << "Opcao invalida!" << std::endl;
+            std::cout << "Opcao invalida!\n"
             Sleep(500);
             break;
         }
